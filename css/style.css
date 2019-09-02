@@ -1,0 +1,307 @@
+/*** CSS here ***/
+body {
+  margin: 0;
+  text-align: center;
+  font-family:sans-serif;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  padding: 5px 0;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: auto 20% auto 20%;
+}
+
+nav ul li + li:before {
+    font-family: 'FontAwesome';
+    content: '\f061';
+    margin:0 35px 0 -15px;
+    color: #fff;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a:link, a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hr-styled {
+  border-top: 2px red solid;
+  width: 30px;
+}
+
+header section {
+  display: flex;
+  justify-content: center;
+}
+
+header .title {
+  /* background-color: blue; */
+  margin-left: 110px;
+}
+
+h2 {
+  margin-block-end: 5px;
+}
+
+.margin-top-bottom-20px {
+  margin: 20px auto;
+}
+#banner {
+  position: relative;
+}
+
+.banner-graphics {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content:flex-end;
+}
+
+.banner-div1 {
+  font-size: 8rem;
+  font-weight: bolder;
+  color: white;
+  width: 50%;
+  margin-bottom: -2rem;
+}
+
+.banner-div2 {
+  width: 100%;
+  padding: 10px 0;
+  font-weight: 900;
+  color: black;
+  background-color: white;
+}
+
+.banner-div3 {
+  width: 100%;
+  color: white;
+  background-color: #12121250;
+}
+
+#banner ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.banner-div3 img {
+  width: 50px;
+}
+
+
+#header-right {
+  /* background-color: red; */
+  color: crimson;
+  margin-left: 50px;
+}
+
+.timer-box {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  background-color: crimson;
+  color: white;
+  display: inline-block;
+  margin: 10px 2px auto;
+}
+
+.timer-box hr {
+  margin: 0 6px;
+}
+
+.time-remaining {
+  font-size: 1.4rem;
+}
+
+.time-desc {
+  font-size: 0.6rem;
+}
+
+
+.general {
+  display: flex;
+  flex-direction: column;
+}
+
+.general h1 {
+  padding-top: 5px;
+}
+
+.red {
+  color: crimson;
+}
+
+.general p {
+  text-transform: uppercase;
+  padding: 22px;
+}
+
+.btn {
+  border: 2px solid black;
+
+}
+.btn-red {
+  background-color: crimson;
+  color: white;
+  border: none;
+  margin: 10px 10px 10px 0;
+  padding: 10px;
+}
+
+.btn-white {
+  border-color: #adadad;
+  background-color: white;
+  color: #adadad;
+  margin: 10px 10px 10px 0;
+  padding: 10px 50px;
+
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+#main span {
+  vertical-align: super;
+}
+.display-box {
+  text-align: left;
+  background-color: #ebebeb;
+  width: 25%;
+  margin: 10px;
+  padding: 10px 20px 20px 20px;
+}
+
+.hr-left {
+  margin-left: 0;  /* to align the hr line to the left */
+}
+
+#contact img {
+   width:70%;
+}
+
+#gallery {
+  position: relative;
+  /* display: flex; */
+  margin: auto 200px;
+}
+
+.gallery-image {
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  width: 22%; /* to get 4 gallery images on one line, accounting for a margin of 20px between each image */
+}
+
+.gallery-image img {
+  width: 100%;
+  margin: -5px;
+}
+
+.diamond-shape {
+  position: absolute;
+  bottom: 110px;
+  left: 100px;
+  background: #fff;
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  box-shadow: 4px 2px 9px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transform:rotate(45deg);
+}
+
+.text-in-diamond {
+  font-size: 1.5em;
+  font-weight: 900;
+  transform: rotate(-45deg);
+  display: table-cell;
+  vertical-align: middle;
+  height: 60px;
+  width: 60px;
+}
+
+.text-under-diamond {
+  padding: 12px;
+  background-color: black;
+}
+
+.white {
+  color: #fff;
+  margin-block-start: 0;
+}
+
+#subscribe  {
+  clear: left;
+  position: relative;
+}
+#subscribe h2 {
+  color: crimson;
+}
+
+#subscribe img {
+   width:100%;
+   position: absolute;
+   bottom: 150px;
+   left: 0;
+}
+
+.flex-column {
+  margin: auto 20%;
+  display: flex;
+  flex-direction: column;
+  /* position: absolute;
+  top: 30px;
+  left: 50%; */
+}
+
+.flex-row {
+  display: flex;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.grey {
+  position: absolute;
+  bottom: 0px;
+  z-index: 0;  /* put under the flex-row */
+  height: 150px;
+  width: 100%;
+  background-color: #EAEBEB;
+  margin: 0;
+}
+
+.flex-row div {
+  margin: auto 20px;
+}
+
+footer {
+  background-color: #808185;
+  padding: 10px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content:center;
+
+}
+
+footer img {
+  height: 50px;
+  /* position: absolute;
+  bottom: 10px;
+  clip: rect(0px, 60px, 200px, 0px); */
+
+}
